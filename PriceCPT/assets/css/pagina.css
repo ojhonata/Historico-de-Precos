@@ -1,0 +1,129 @@
+:root{
+    --primary: #d1cfca;
+    --secundary: #f5f5f5;
+    --text-color: #003366;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d1cfca;
+    position: relative;
+}
+
+/* Sidebar */
+.menu-lateral {
+    width: 250px;
+    background-color: #e6e6e6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 4px solid #8c8c8c;
+    height: 100vh;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo img {
+    width: 180px;
+    height: 90px;
+}
+
+.menu-lateral h3 {
+    font-size: 16px;
+    color: #003366;
+    margin-bottom: 40px;
+
+}
+
+.historico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.historico img {
+    width: 50px;
+    margin: 15px 0;
+    
+}
+
+.campo-pesquisa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    min-width: 300px;
+}
+
+.campo-pesquisa input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.campo-pesquisa img {
+    width: 22px;
+    margin: 0 8px;
+}
+
+.perfil {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.perfil img {
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 200px;
+    }
+    .campo-pesquisa {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-lateral {
+        width: 180px;
+    }
+    .campo-pesquisa {
+        width: 80%;
+    }
+}
