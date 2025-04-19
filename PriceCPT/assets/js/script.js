@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            window.location.href = "../pagina.html";
+            window.location.href = "pagina.html";
         });
     } else {
         console.error("Formulário de login não encontrado.");
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (textoDigitado === "") {
                     alert("Por favor, digite algo para pesquisar.");
                 } else {
-                    window.location.href = "../pagina2.html";
+                    window.location.href = "pagina2.html";
                 }
             }
         });
@@ -68,6 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         data: [10000, 11000, 10500],
                         backgroundColor: 'black'
                     },
+                    {
+                        label: 'Produto 2',
+                        data: [2000, 5000, 8000],
+                        backgroundColor: 'green'
+                    }
 
                 ]
             },
