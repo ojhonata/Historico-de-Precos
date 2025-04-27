@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>PriceCPT</title>
 </head>
 <body>
     <div class="container">
         <div class="form-box active" id="login-form">
-            <form action="">
+            <form action="javascript:void(0);">
                 <h2>Login</h2>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Senha" required>
-                <button type="submit" name="login">Entrar</button>
+                <button type="submit">Entrar</button>
                 <p>Não tem uma conta? <a href="#" onclick="exibirFormulario('registrar-form')">Registrar</a></p>
             </form>
         </div>
 
         <div class="form-box" id="registrar-form">
-            <form action="">
+            <form action="javascript:void(0);">
                 <h2>Registrar</h2>
                 <input type="text" name="nome" placeholder="Nome" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Senha" required>
-                <button type="submit" name="registrar">Registrar</button>
+                <button type="submit">Registrar</button>
                 <p>Já tem uma conta? <a href="#" onclick="exibirFormulario('login-form')">Login</a></p>
             </form>
         </div>
